@@ -77,7 +77,7 @@
                 <div class="col-sm-4 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                            <h5>Últimas aulas acessadas</h5>
+                            <h5>Postadas recentemente</h5>
                             <div class="row">
                                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                     @foreach ($ultimasPostadas as $aula )

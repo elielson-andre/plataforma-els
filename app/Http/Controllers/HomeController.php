@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
         $qtdUsers = User::where('type', 0)->count();
         $qtdAulas = Classe::all()->count();
-        $ultimasPostadas = Classe::limit(3)->get();
+        $ultimasPostadas = Classe::limit(3)->orderBy('id', 'DESC')->get();
         return view('home',[
             'qtdUsers' => $qtdUsers,
             'qtdAulas' => $qtdAulas,
