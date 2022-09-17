@@ -1,5 +1,5 @@
 <!--
-     2022 - Els learning | elielsondeveloper@gmail.com
+     2022 - Els code | elielsondeveloper@gmail.com
 -->
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -23,7 +23,7 @@
                     <div class="brand header-brand">
                         <h1 class="m-0">
 							<a href="#">
-								<img class="header-logo-image" src="{{ asset('images/logo.svg') }}" alt="Logo">
+								<img class="header-logo-image" src="{{ asset('images/logo.png') }}" alt="Logo">
                             </a>
                         </h1>
                     </div>
@@ -37,7 +37,7 @@
                     <div class="hero-inner">
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">< /> Desenvolvimento web sem complicações, do absoluto zero.</h1>
-	                        <p class="hero-paragraph">Seja para conhecer, ou para atuar na área que mais cresce no MUNDO, aprenda mesmo que nunca tenha escrito uma linha de código</p>
+	                        <p class="hero-paragraph">Seja para conhecer, ou para atuar na área que mais cresce no MUNDO, aprenda mesmo que nunca tenha escrito uma linha de código.</p>
 	                        <div class="hero-cta"><a class="button button-primary" href="{{ route('register') }}">CRIAR CONTA</a><a class="button" href="{{ route('login') }}">ACESSAR MINHA CONTA</a></div>
 						</div>
 						<div class="hero-figure anime-element">
@@ -66,7 +66,7 @@
                             <div class="feature text-center is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-										<img src="{{ asset('images/feature-icon-01.svg') }}" alt="Feature 01">
+										<img src="{{ asset('images/concepts_img.png') }}" width="90px" />
                                     </div>
                                     <h4 class="feature-title mt-24">Conceitos gerais</h4>
                                     <p class="text-sm mb-0">Neste pequeno treinamento, você entenderá os principais conceitos da computação, para ter uma jornada de aprendizado mais sólida.</p>
@@ -75,7 +75,7 @@
 							<div class="feature text-center is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-										<img src="{{ asset('images/feature-icon-02.svg') }}" alt="Feature 02">
+										<img src="{{ asset('images/mind_img.png') }}" width="100px" />
                                     </div>
                                     <h4 class="feature-title mt-24">Lógica</h4>
                                     <p class="text-sm mb-0">Aprenda a pensar como um programador! Entender o problema, esquematizar uma solução, e colocá-la em prática.</p>
@@ -84,7 +84,7 @@
                             <div class="feature text-center is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-										<img src="{{ asset('images/feature-icon-03.svg') }}" alt="Feature 03">
+										<img src="{{ asset('images/charge_img.png') }}" width="80px" />
                                     </div>
                                     <h4 class="feature-title mt-24">Carga básica</h4>
                                     <p class="text-sm mb-0">Ao final do treinamento, você terá toda carga básica para dar seus primeiros passos no mercado de tecnologia!</p>
@@ -113,7 +113,7 @@
             <div class="container">
                 <div class="site-footer-inner">
 
-                    <div class="footer-copyright">&copy; 2022 Els-learning | elielsondeveloper@gmail.com</div>
+                    <div class="footer-copyright">&copy; 2022 Els-code | elielsondeveloper@gmail.com</div>
                 </div>
             </div>
         </footer>
