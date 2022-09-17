@@ -61,8 +61,8 @@
                             <h4 class="card-title">Suas aulas</h4>
 
                             @foreach ($aulas as $item)
-                                <a href=" {{ url('aulas')}}/{{ $item->slug}}" class="text-decoration-none">
-                                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 mt-3">
+                                <a href=" {{ url('aulas')}}/{{ $item->slug }}" class="text-decoration-none">
+                                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 mt-3 @if ($item->slug === $slug ) border border-success @endif">
                                         <div class="text-md-center text-xl-left ">
                                             <h6 class="mb-1 text-white"> {{ $item->title }} </h6>
                                             <p class="text-muted mb-0"> {{ $item->type }} </p>
