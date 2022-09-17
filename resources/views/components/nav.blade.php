@@ -43,7 +43,7 @@
                     aria-labelledby="profileDropdown">
                     <h6 class="p-3 mb-0">Perfil</h6>
                     <div class="dropdown-divider"></div>
-                    <a href="/configuracoes-da-conta" class="dropdown-item preview-item">
+                    <a href="{{ url('meu-perfil') }}" class="dropdown-item preview-item">
                         <div class="preview-thumbnail">
                             <div class="preview-icon bg-dark rounded-circle">
                                 <i class="mdi mdi-settings text-success"></i>

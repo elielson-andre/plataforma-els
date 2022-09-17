@@ -19,7 +19,7 @@
                                         <p class="mb-0 font-weight-normal d-none d-sm-block">Nosso material é GRATUITO, mas se
                                             quiser acelerar ainda mais seu aprendizado, tirar dúvidas diretamente com o
                                             instrutor e ter acesso à materiais exclusivos,
-                                            recomendamos conhecer o PREMIUM (Vagas limitadas).</p>
+                                            recomendamos conhecer o premium.</p>
 
                                     </div>
                                     <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
