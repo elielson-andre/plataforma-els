@@ -100,7 +100,7 @@
                 <div class="col-md-4 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <p> <i class="mdi mdi-pin"></i> Fixado pelo intrutor</p>
+                            <p> <i class="mdi mdi-pin"></i> Fixado pelo instrutor</p>
                             <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                                <p>Novas aulas estão sendo adicionadas semanalmente. Enviaremos uma notificação para <i>{{ Auth::user()->email }}</i>
                                 assim que elas estiverem disponíveis.
