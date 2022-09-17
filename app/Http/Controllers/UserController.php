@@ -88,8 +88,16 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        try {
+            User::where('email', $request->email)->delete();
+            return view('logout');
+        } catch (\Throwable $th) {
+            echo "<script> alert('Erro desconhecido, por favor contate o administrador em contato@elielson.net'); </script>";
+            return view('user');
+        }
+
+
     }
 }

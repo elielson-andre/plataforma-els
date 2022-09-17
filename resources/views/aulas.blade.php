@@ -3,7 +3,7 @@
 @section('content')
     <div class="main-panel">
         <div class="content-wrapper">
-          
+
 
             <div class="row">
                 <div class="col-sm-12 grid-margin pb-0">
@@ -16,7 +16,7 @@
             </div>
 
             <div class="row">
-                
+
                 <div class="col-md-8 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
@@ -27,7 +27,14 @@
 
                             <div class="row">
                                 <div class="col-md-12 mt-3 d-flex justify-content-end">
-                                    <button type="button" class="btn btn-inverse-danger btn-fw">👋 Estou com dificuldades</button>
+                                    <a
+                                    @if( Auth::user()->plan == 1)
+                                    href="https://api.whatsapp.com/send?phone=5598987150653&text=%5B%20{{ Auth::user()->name }}%20%5D%20-%20Estou%20com%20d%C3%BAvidas%20na%20aula%20{{ $title }} "
+                                    @else
+                                    href="{{ url('plano-premium') }}"
+                                    @endif
+                                    type="button" class="btn btn-inverse-danger btn-fw">👋 Estou com dificuldades
+                                </a>
                                 </div>
                             </div>
 
@@ -43,7 +50,7 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>

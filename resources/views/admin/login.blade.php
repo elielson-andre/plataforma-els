@@ -101,9 +101,9 @@
                         <div class="card-body">
                             <form class="access-form" method="POST" action="{{ route('login') }}">
                                 @csrf
-                                
+
                                 <div class="form-group row">
-                                   
+
                                     <div class="col-md-12">
                                         <input type="text" id="email_address" class="form-control"
                                             name="email-address" required autofocus placeholder="Email">
@@ -111,7 +111,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    
+
                                     <div class="col-md-12">
                                         <input type="password" id="password" class="form-control" name="password"
                                             required placeholder="*****">

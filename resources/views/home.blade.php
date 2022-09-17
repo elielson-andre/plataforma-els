@@ -111,7 +111,7 @@
                                 <p>Ainda estamos fazendo algumas correções na plataforma, mas você já pode assistir as <b>{{ $qtdAulas }}</b>
                                 aulas disponíveis clicando no menu lateral <i>" <i class="mdi mdi-laptop"></i> Minhas aulas" </i>.
                                 </p>
-                             </div>
+                            </div>
 
                         </div>
                     </div>
