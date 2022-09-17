@@ -112,8 +112,7 @@
         <footer class="site-footer">
             <div class="container">
                 <div class="site-footer-inner">
-
-                    <div class="footer-copyright">&copy; 2022 Els-code | elielsondeveloper@gmail.com</div>
+                    <div class="footer-copyright">&copy; 2022 Elielson André | contato@elielson.net</div>
                 </div>
             </div>
         </footer>

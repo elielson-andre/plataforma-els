@@ -20,7 +20,7 @@
                                             quiser acelerar ainda mais seu aprendizado, tirar dúvidas diretamente com o
                                             instrutor e ter acesso à materiais exclusivos,
                                             recomendamos conhecer o PREMIUM (Vagas limitadas).</p>
-                                    
+
                                     </div>
                                     <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
                                         <span>
@@ -35,7 +35,7 @@
                 </div>
             @endif
 
-           
+
 
             <div class="row">
                 <div class="col-sm-4 grid-margin">
@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                     <div class="d-flex d-sm-block d-md-flex align-items-center">
-                                        <h2 class="mb-0">14</h2>
+                                        <h2 class="mb-0">{{ $qtdAulas }}</h2>
                                     </div>
                                     <h6 class="text-muted font-weight-normal">Postadas e atualizadas</h6>
                                 </div>
@@ -63,8 +63,7 @@
                             <div class="row">
                                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                     <div class="d-flex d-sm-block d-md-flex align-items-center">
-                                        <h2 class="mb-0">22</h2>
-                                        <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                                        <h2 class="mb-0">{{ $qtdUsers }}</h2>
                                     </div>
                                     <h6 class="text-muted font-weight-normal"></h6>
                                 </div>
@@ -81,9 +80,11 @@
                             <h5>Últimas aulas acessadas</h5>
                             <div class="row">
                                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                                    <h6 class="text-muted font-weight-normal"> Aula tra la la</h6>
-                                    <h6 class="text-muted font-weight-normal"> Outra aula teste</h6>
-                                    <h6 class="text-muted font-weight-normal"> Aula teste dfghsfdf</h6>
+                                    @foreach ($ultimasPostadas as $aula )
+                                        <h6 class="text-muted font-weight-normal"> {{ $aula->title }} </h6>
+                                    @endforeach
+
+
                                 </div>
                                 <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                                     <i class="icon-lg mdi mdi-history text-danger ml-auto"></i>
@@ -99,19 +100,18 @@
                 <div class="col-md-4 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Postadas recentemente</h4>
-
-                            <div
-                                class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                                <div class="text-md-center text-xl-left">
-                                    <h6 class="mb-1">Titulo da aula</h6>
-                                    <p class="text-muted mb-0">Backend | PHP</p>
-                                </div>
-                                <div
-                                    class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                                    <h6 class="font-weight-bold text-warning mb-0">Nova</h6>
-                                </div>
+                            <p> <i class="mdi mdi-pin"></i> Fixado pelo intrutor</p>
+                            <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
+                               <p>Novas aulas estão sendo adicionadas semanalmente. Enviaremos uma notificação para <i>{{ Auth::user()->email }}</i>
+                                assim que elas estiverem disponíveis.
+                                </p>
                             </div>
+
+                            <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
+                                <p>Ainda estamos fazendo algumas correções na plataforma, mas você já pode assistir as <b>{{ $qtdAulas }}</b>
+                                aulas disponíveis clicando no menu lateral <i>" <i class="mdi mdi-laptop"></i> Minhas aulas" </i>.
+                                </p>
+                             </div>
 
                         </div>
                     </div>

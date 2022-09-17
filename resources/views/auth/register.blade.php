@@ -64,7 +64,7 @@
             </form>
 
         </div>
-        <small class="txt-copyright" >&copy; 2022 - Elielson André | elielsondeveloper@gmail.com</small>
+        <small class="txt-copyright" >&copy; 2022 - Elielson André | contato@elielson.net</small>
 
     </div>
 

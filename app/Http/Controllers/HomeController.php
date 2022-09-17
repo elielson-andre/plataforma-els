@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Classe;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,7 +25,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $qtdUsers = User::where('type', 0)->count();
+        $qtdAulas = Classe::all()->count();
+        $ultimasPostadas = Classe::limit(3)->get();
+        return view('home',[
+            'qtdUsers' => $qtdUsers,
+            'qtdAulas' => $qtdAulas,
+            'ultimasPostadas' => $ultimasPostadas
+        ]);
     }
 
     public function dicas()
@@ -35,8 +43,8 @@ class HomeController extends Controller
     public function todasAsAulas(){
         $aulas = Classe::all();
         return view('todasAsAulas', ['aulas' => $aulas]);
-        
-       
+
+
     }
 
     public function aulas()
@@ -45,7 +53,7 @@ class HomeController extends Controller
         return view('aulas', ['aulas' => $aulas]);
     }
 
-    
 
-   
+
+
 }
