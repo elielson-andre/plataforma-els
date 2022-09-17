@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    transition: .1s;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #eee;
+}
+
+#bgvid {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.content-box{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.51);
+    /* filter: blur(4px); */
+    color:white;
+}
+
+/* Typing Text */
+.container-typing-typing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-typing-typing p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.container-typing p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+}
+.container-typing p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.container-typing p span.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
+.content form{
+    width: 100%;
+
+}
+
+.content form label{
+    color: #ccc;
+}
+
+.content form input{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 2px 5px;
+    background-color: rgba(4, 4, 139, 0.213);
+    border-bottom: 1px solid  rgba(4, 4, 139, 0);
+    color: #fff;
+}
+
+
+.content form input:focus{
+    background-color: rgba(4, 4, 139, 0.257);
+    border-bottom: 2px solid  rgba(4, 4, 139, 0.775);
+    padding: 2px 7px;
+}
+
+.content form #pdwLevel{
+    color: #dd7732;
+}
+
+
+.content .error-alert{
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+    margin: 10px 0;
+    background-color: rgba(255, 0, 0, 0.14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content form .btn-access{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 19, 128);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.content form .btn-access:hover{
+    background-color: rgb(1, 14, 86);
+}
+
+.txt-bottom{
+    text-align: center;
+}
+
+.txt-bottom a{
+    color: blue;
+}
+
+
+.txt-copyright{
+    color: rgba(204, 204, 204, 0.72);
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
