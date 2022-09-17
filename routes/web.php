@@ -27,8 +27,6 @@ Route::get('/', function () {
 Auth::routes();
 
 
-
-
 Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/dicas', [App\Http\Controllers\HomeController::class, 'dicas'])->name('dicas');
@@ -37,7 +35,6 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/meu-perfil',[UserController::class,'index'])->name('meu-perfil');
     Route::get('/plano-premium',[UserController::class,'premium'])->name('plano-premium');
 });
-
 
 
 /*------------------------------------------
@@ -50,7 +47,10 @@ Route::get('/admin-area/login', [AdminControoller::class,'login']);
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/home', [AulaController::class, 'index'])->name('admin.home');
-    Route::get('/admin/publicar-aula', [AulaController::class, 'publicarAulaGet'])->name('publicar-aula');
+    Route::get('/admin/publicar-aula', [AulaController::class, 'publicarGet'])->name('publicar-aula');
+    Route::get('/admin/editar/{slug}', [AulaController::class, 'editarGet']);
+    Route::get('/admin/excluir/{slug}', [AulaController::class, 'excluirGet']);
 
-    Route::post('/admin/publicar-aula', [AulaController::class, 'publicarAulaPost']);
+    Route::post('/admin/publicar-aula', [AulaController::class, 'publicarPost']);
+    Route::post('/admin/editar', [AulaController::class, 'editarPost']);
 });
