@@ -24,7 +24,7 @@
                 @csrf
                 <p>
                     <label>Primeiro nome/apelido</label>
-                    <input type="text" id="name" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus />
+                    <input type="text" id="name" name="name" value="{{ old('name') }}" maxlength="15" required autocomplete="name" autofocus />
                 </p>
 
                 <p>
