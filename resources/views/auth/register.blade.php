@@ -23,7 +23,7 @@
             <form class="access-form" method="POST" action="{{ route('register') }}" >
                 @csrf
                 <p>
-                    <label>Seu nome/apelido</label>
+                    <label>Primeiro nome/apelido</label>
                     <input type="text" id="name" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus />
                 </p>
 
