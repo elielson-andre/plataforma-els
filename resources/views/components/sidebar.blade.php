@@ -16,21 +16,15 @@
                     </div>
                     <div class="profile-name">
                         <p class="mb-0 font-weight-normal"> {{ Auth::user()->name }} </p>
+
                         <span>
-
                             @if (  Auth::user()->type == 'admin')
-                                <span class="text-warning"> Administrador</span>
+                                <span> Administrador </span>
                             @else
-                                @if (Auth::user()->plan == 0)
-                                    Plano:
-                                    <span class="text-success"> Free</span>
-                                @elseif(Auth::user()->plan == 1)
-                                    <span class="text-warning"><i class="mdi mdi-crown"></i> Usuário Premium</span>
-                                @endif
-
+                                <span> Aluno </span>
                             @endif
-
                         </span>
+
                     </div>
                 </div>
 

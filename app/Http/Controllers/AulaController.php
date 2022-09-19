@@ -27,19 +27,26 @@ class AulaController extends Controller
     public function getInfo(Request $request)
     {
 
-        $aulaInfo = Classe::where('slug', $request->slug)->first();
+        if(Classe::where('slug', $request->slug)->count() > 0){
+            $aulaInfo = Classe::where('slug', $request->slug)->first();
 
-        $aulas = Classe::all();
+            $aulas = Classe::all();
 
-        return view('aulas', [
-            'title' => $aulaInfo->title,
-            'slug' => $aulaInfo->slug,
-            'link' => $aulaInfo->link,
-            'type' => $aulaInfo->type,
-            'description' => $aulaInfo->description,
-            //
-            'aulas' => $aulas
-        ]);
+            return view('aulas', [
+                'title' => $aulaInfo->title,
+                'slug' => $aulaInfo->slug,
+                'link' => $aulaInfo->link,
+                'type' => $aulaInfo->type,
+                'description' => $aulaInfo->description,
+                //
+                'aulas' => $aulas
+            ]);
+        }else{
+            $aulas = Classe::all();
+            return view('todasAsAulas', ['aulas' => $aulas]);
+        }
+        
+        
     }
 
 

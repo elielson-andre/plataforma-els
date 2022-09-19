@@ -3,40 +3,7 @@
 @section('content')
     <div class="main-panel">
         <div class="content-wrapper">
-            @if ( Auth::user()->plan == 0 )
-                <div class="row">
-                    <div class="col-12 grid-margin stretch-card">
-                        <div class="card corona-gradient-card">
-                            <div class="card-body py-0 px-0 px-sm-3">
-                                <div class="row align-items-center">
-                                    <div class="col-4 col-sm-3 col-xl-2">
-                                        <img src="assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid"
-                                            alt="">
-                                    </div>
-                                    <div class="col-5 col-sm-7 col-xl-8 p-0">
-                                        <h4 class="mb-1 mb-sm-0">Aprenda a programar do absoluto zero. </h4>
-
-                                        <p class="mb-0 font-weight-normal d-none d-sm-block">Nosso material é GRATUITO, mas se
-                                            quiser acelerar ainda mais seu aprendizado, tirar dúvidas diretamente com o
-                                            instrutor e ter acesso à materiais exclusivos,
-                                            recomendamos conhecer o premium.</p>
-
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
-                                        <span>
-                                            <a href="{{ route('plano-premium') }}"
-                                                class="btn btn-outline-light btn-rounded get-started-btn">Conhecer Premium</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endif
-
-
-
+           
             <div class="row">
                 <div class="col-sm-4 grid-margin">
                     <div class="card">
@@ -201,58 +168,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="preview-item border-bottom">
-                                            <div class="preview-thumbnail">
-                                                <div class="preview-icon bg-danger">
-                                                    <i class="mdi mdi-movie"></i>
-                                                </div>
-                                            </div>
-                                            <div class="preview-item-content d-sm-flex flex-grow">
-                                                <div class="flex-grow">
-                                                    <h6 class="preview-subject">Laravel Framework</h6>
-                                                    <p class="text-muted mb-0"> <span class="text-warning"> <i class="mdi mdi-crown"></i> Premium</span> | Construa
-                                                        aplicações de maneira rápida, crie API'S, microsserviços e muito
-                                                        mais. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="preview-item border-bottom">
-                                            <div class="preview-thumbnail">
-                                                <div class="preview-icon bg-danger">
-                                                    <i class="mdi mdi-code-braces"></i>
-                                                </div>
-                                            </div>
-                                            <div class="preview-item-content d-sm-flex flex-grow">
-                                                <div class="flex-grow">
-                                                    <h6 class="preview-subject">Pro dev pack</h6>
-                                                    <p class="text-muted mb-0"> <span class="text-warning"> <i
-                                                                class="mdi mdi-crown"></i> Premium</span> | Configuração de
-                                                                servidor remoto, acesso SSH, Apontamento DNS, versionamento
-                                                                GIT/GitHub avançado e muito mais. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="preview-item border-bottom">
-                                            <div class="preview-thumbnail">
-                                                <div class="preview-icon bg-danger">
-                                                    <i class="mdi mdi-linux"></i>
-                                                </div>
-                                            </div>
-                                            <div class="preview-item-content d-sm-flex flex-grow">
-                                                <div class="flex-grow">
-                                                    <h6 class="preview-subject">Linux starter pack</h6>
-                                                    <p class="text-muted mb-0"> <span class="text-warning"> <i
-                                                                class="mdi mdi-crown"></i> Premium</span> | Domine um dos
-                                                        melhores sistemas operacionais que já existiu, altamente
-                                                        personalizável, útil e abrangente para programadores.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
 
                                     </div>
                                 </div>
