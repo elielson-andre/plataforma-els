@@ -22,11 +22,6 @@ class UserController extends Controller
         return view('user');
     }
 
-    public function premium()
-    {
-        return view('premium');
-    }
-
     /**
      * Show the form for creating a new resource.
      *

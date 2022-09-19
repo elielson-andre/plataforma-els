@@ -33,7 +33,6 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/aulas',[HomeController::class,'todasAsAulas'])->name('aulas');
     Route::get('/aulas/{slug}',[AulaController::class,'getInfo']);
     Route::get('/meu-perfil',[UserController::class,'index'])->name('meu-perfil');
-    Route::get('/plano-premium',[UserController::class,'premium'])->name('plano-premium');
     Route::get('/excluir-conta/{email}',[UserController::class,'destroy']);
 
 });
