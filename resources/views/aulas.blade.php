@@ -25,7 +25,7 @@
                             </div>
 
 
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-md-12 mt-3 d-flex justify-content-end">
                                     <a
                                     @if( Auth::user()->plan == 1)
@@ -36,7 +36,7 @@
                                     type="button" class="btn btn-inverse-danger btn-fw">👋 Estou com dificuldades
                                 </a>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="row">
                                 <div class="col-sm-12">
